@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 
-h1 {font-size: 7.595rem; /* 121.44px */}
-h2 {font-size: 5.063rem; /* 80.96px */}
-h3 {font-size: 3.375rem; /* 54.08px */}
-h4 {font-size: 2.250rem; /* 36px */}
-h5 {font-size: 1.500rem; /* 24px */}
+h1 {font-size: 7.595em; /* 121.44px */}
+h2 {font-size: 5.063em; /* 80.96px */}
+h3 {font-size: 3.375em; /* 54.08px */}
+h4 {font-size: 2.250em; /* 36px */}
+h5 {font-size: 1.500em; /* 24px */}
 
-small {font-size: 0.667rem; /* 10.72px */}
+small {font-size: 0.667em; /* 10.72px */}
 
 
 .logo{
@@ -135,16 +135,58 @@ form{
   width:100%;
   height:100%;
   object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
 }
 
-a{
+.results:hover img{
+  opacity: 0.5;
+}
+
+.results a{
+  display: block;
   text-decoration: none;
   color: var(--text);
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+  font-weight: 500 ;
+}
+
+#show-more-btn{
+  background-color: var(--text);
+  border: none;
+  color: var(--background);
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear;
+  font-weight: 500;
+  display: none;
+}
+
+#show-more-btn:hover{
+  box-shadow: 0 0 15px var(--text);
 }
 
 
+/* media queries */
+@media screen and (max-width: 768px) {
+  .results{
+   width: 45%;
+  }
+  .search-results{
+    padding: 20px;
+  }
+}
 
-
+@media screen and (max-width: 480px) {
+  .results{
+   width: 100%;
+  }
+}
 
 /* dark & light mode code for future use */
 /* 
