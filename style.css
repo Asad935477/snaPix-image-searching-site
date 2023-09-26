@@ -23,6 +23,7 @@ body {
   font-weight: 400;
   background-color: var(--background);
   color: var(--text);
+  padding:0 20px 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -30,27 +31,27 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 
-h1 {font-size: 7.595em; /* 121.44px */}
-h2 {font-size: 5.063em; /* 80.96px */}
-h3 {font-size: 3.375em; /* 54.08px */}
-h4 {font-size: 2.250em; /* 36px */}
-h5 {font-size: 1.500em; /* 24px */}
+h1 {font-size: 7.595rem; /* 121.44px */}
+h2 {font-size: 5.063rem; /* 80.96px */}
+h3 {font-size: 3.375rem; /* 54.08px */}
+h4 {font-size: 2.250rem; /* 36px */}
+h5 {font-size: 1.500rem; /* 24px */}
 
-small {font-size: 0.667em; /* 10.72px */}
+small {font-size: 0.667rem; /* 10.72px */}
 
 
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
 }
 
-.logo img{
+.logo img {
   margin-right: 0.5rem;
 }
 
-h4{
+h4 {
   color: var(--accent);
   display: flex;
   justify-content: center;
@@ -59,17 +60,18 @@ h4{
   margin-top: -2rem;
 }
 
-form{
+form {
   position: relative;
-  width: 800px;
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 800px;
   height: 70px;
   margin: 3rem auto 4rem;
 }
 
-#search-btn{
-  position:absolute;
+#search-btn {
+  position: absolute;
   right: 8px;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   width: 55px;
   height: 55px;
@@ -82,77 +84,77 @@ form{
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 20px #6d6d6d;
-  transition: background-color 0.3s linear,
-  box-shadow 0.3s linear;
+  transition: background-color 0.3s linear, box-shadow 0.3s linear;
 }
 
-#search-btn:hover{
+#search-btn:hover {
   background-color: var(--accent);
   box-shadow: 0 0 20px var(--accent);
 }
 
-.search-btn-icon{
+.search-btn-icon {
   display: block;
   width: 30px;
 }
 
-#search-input{
+#search-input {
   padding: 10px 60px 10px 20px;
   border: 4px solid #6d6d6d;
-  width:100%;
+  width: 100%;
   height: 100%;
   background-color: var(--background);
   border-radius: 100px;
-  font-size:18px ;
+  font-size: 18px;
   color: var(--accent);
   outline: none;
   transition: border-color 0.4s linear;
   box-shadow: 0.4s;
 }
-#search-input:focus{
+
+#search-input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 50px var(--accent);
 }
 
-.search-results{
+.search-results {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-.results{
-  margin-bottom:60px ;
+.results {
+  margin-bottom: 60px;
   width: 30%;
-  height:100%;
-  border-radius:5px;
+  height: 100%;
+  border-radius: 5px;
   box-shadow: 0 0 8px var(--text);
   overflow: hidden;
 }
 
-.results img{
-  width:100%;
-  height:100%;
+.results img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: opacity 0.2s ease-in-out;
 }
 
-.results:hover img{
+.results:hover img {
   opacity: 0.5;
 }
 
-.results a{
+.results a {
   display: block;
   text-decoration: none;
   color: var(--text);
   text-align: center;
   text-transform: capitalize;
   padding-bottom: 8px;
-  font-weight: 500 ;
+  font-weight: 500;
 }
 
-#show-more-btn{
+#show-more-btn {
   background-color: var(--text);
   border: none;
   color: var(--background);
@@ -167,26 +169,72 @@ form{
   display: none;
 }
 
-#show-more-btn:hover{
+#show-more-btn:hover {
   box-shadow: 0 0 15px var(--text);
 }
 
-
 /* media queries */
-@media screen and (max-width: 768px) {
-  .results{
-   width: 45%;
+@media screen and (max-width: 810px) {
+  .logo img{
+    max-width: 4rem;
+    max-height: 4.5rem;
+    margin-top: -2.5rem;
   }
-  .search-results{
-    padding: 20px;
+  h1{
+    font-size: 5.5rem;
+    margin-bottom:2rem ;
+  }
+  h4{
+    font-size: 2rem;
+  }
+  form{
+    max-width: 650px;
+  }
+  .results {
+    width: 45%;
+  }
+  .search-results {
+    padding: 30px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .results{
-   width: 100%;
+  h1{
+    font-size: 4rem;
   }
+  h4{
+    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+  }
+  .logo img{
+    margin-top: -0.8rem;
+  }
+  #search-input, #search-input-btn{
+    max-height: ;
+  }
+  .results {
+    width: 100%;
+  }
+  form {
+    margin: 1rem auto 2rem;
+    height: 50px;
+    max-width: 23rem;
+  }
+  #search-input{
+  padding: 10px 60px 10px 30px;
+  }
+  #search-btn{
+    width: 35px;
+    height: 35px;
+  }
+  .search-btn-icon{
+    width: 22px;
+  }
+
 }
+
 
 /* dark & light mode code for future use */
 /* 
