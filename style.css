@@ -196,6 +196,9 @@ form {
   .search-results {
     padding: 30px;
   }
+  #search-input{
+    padding: 10px 60px 10px 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -210,9 +213,6 @@ form {
   }
   .logo img{
     margin-top: -0.8rem;
-  }
-  #search-input, #search-input-btn{
-    max-height: ;
   }
   .results {
     width: 100%;
@@ -232,8 +232,8 @@ form {
   .search-btn-icon{
     width: 22px;
   }
-
 }
+
 
 
 /* dark & light mode code for future use */
