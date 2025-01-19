@@ -31,3 +31,21 @@ To run this project locally, follow these steps:
 - Browse and download images as needed.
 
 
+## Contributing
+
+Contributions are welcome! To contribute to this project, follow these steps:
+
+1. **Fork the repository.**
+2. **Create a new branch:**
+    ```bash
+    git checkout -b feature-branch-name
+    ```
+3. **Make your changes and commit them:**
+    ```bash
+    git commit -m 'Add new feature'
+    ```
+4. **Push to the branch:**
+    ```bash
+    git push origin feature-branch-name
+    ```
+5. **Submit a pull request.**
