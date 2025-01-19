@@ -60,5 +60,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or feedback, please contact me at [yousafzaiasad@gmail.com].
 
+## Acknowledgements
+
+- Unsplash API
+- Vercel
+
 
 
