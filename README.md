@@ -10,3 +10,18 @@ snaPix: An innovative website meticulously developed using HTML, CSS, and JavaSc
 - Dynamic content rendering with JavaScript
 - Hosted and deployed on Vercel for reliable access
 
+## Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Asad935477/snaPix-image-searching-site.git
+    cd snaPix-image-searching-site
+    ```
+
+2. **Open the index.html file in your browser:**
+    ```bash
+    open index.html
+    ```
+
