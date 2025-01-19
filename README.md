@@ -55,3 +55,10 @@ Contributions are welcome! To contribute to this project, follow these steps:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+
+## Contact
+
+For any inquiries or feedback, please contact me at [yousafzaiasad@gmail.com].
+
+
+
