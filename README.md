@@ -24,4 +24,10 @@ To run this project locally, follow these steps:
     ```bash
     open index.html
     ```
+## Usage
+
+- Open the website.
+- Use the search bar to find royalty-free images.
+- Browse and download images as needed.
+
 
